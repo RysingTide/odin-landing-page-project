@@ -17,10 +17,22 @@ ul {
 }
 
 body {
-  background: #1f2937;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button {
+  color: #e5e7eb;
+  background: #3883f6;
+  border-style: none;
+  border-radius: 5px;
+  margin-top: 16px;
+  padding: 10px 30px;
+}
+
+.signup > button {
+  border: 2px solid #eee;
 }
 
 .header {
@@ -36,59 +48,147 @@ body {
   font-size: 24px;
 }
 
+.hero-container-background {
+  background: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .hero-container {
   width: 70%;
 }
 
-.hero-title {
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px 0;
+  padding: 75px 0;
+}
+
+.hero-info {
+  width: 47%;
+}
+
+.hero-main {
   color: #f9faf8;
   font-size: 48px;
   font-weight: bolder;
 }
 
-.hero > p {
+.hero-info > p {
   color: #e5e7eb;
   font-size: 18px;
 }
 
 .img {
-  background: #eee;
+  color: white;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 200px;
   width: 400px;
 }
 
-.info-container {
-  background: #eee;
-  width: 70%;
+.info-container-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.info-container > p {
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 75px;
+  padding-bottom: 75px;
+}
+
+.info-container > h3 {
   color: #1f2937;
   font-size: 36px;
   font-weight: bolder;
+  margin-bottom: 32px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
 }
 
 .card-img {
   border: 2px solid #3883f6;
   border-radius: 10px;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+.quote-container-background {
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .quote-container {
   color: #1f2937;
-  background: #e5e7eb;
   font-size: 36px;
   font-weight: lighter;
   font-style: italic;
-  width: 70%;
+  margin: 100px 0;
+  width: 55%;
+}
+
+#quote {
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.5em;
 }
 
 .signup-container {
-  background: #eee;
-  width: 70%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .signup {
+  border-radius: 10px;
+  color: #f9faf8;
   background: #3883f6;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  margin: 75px 0;
+  padding: 50px 0;
+  width: 70%;
+}
+
+#signup-title {
+  font-size: 24px;
+}
+
+.footer {
+  background: #1f2937;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: #f9faf8;
+  padding: 35px 0;
+  width: 100%;
 }
